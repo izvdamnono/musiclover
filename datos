@@ -1,0 +1,226 @@
+musiclover
+
+Instalar PhpMyAdmin
+   [mysql-ctl instal]
+   phpmyadmin-ctl install
+   [mysql-ctl start]
+
+Crear base de datos MySQL
+    create database MUSICLOVER default character set utf8 collate utf8_unicode_ci;
+    create user USUARIOBD@localhost identified by 'CLAVEBD';
+    grant all on MUSICLOVER.* to USUARIOBD@localhost;
+    flush privileges;
+
+    create database basedatos default character set utf8 collate utf8_unicode_ci;
+    create user usuario@localhost identified by 'clave';
+    grant all on basedatos.* to usuario@localhost;
+    flush privileges;
+
+Doctrine 2
+    http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/tutorials/getting-started.html
+    http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/dql-doctrine-query-language.html
+    http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/query-builder.html
+    https://github.com/doctrine/doctrine2-orm-tutorial
+
+    Doctrine 2 is an object-relational mapper (ORM) for PHP 5.4+ that provides transparent
+    persistence for PHP objects.
+
+    Entities are PHP Objects that can be identified over many requests by a unique identifier
+    or primary key. An entity contains persistable properties. A persistable property is an
+    instance variable of the entity that is saved into and retrieved from the database by
+    Doctrine’s data mapping capabilities.
+
+    1 Instalacion:
+    Crear: composer.json.
+    Ejecutar: composer install
+
+    2 Crear los objetos que van a ser mapeados en la base de datos.
+
+    /* 1 bootstrap.php */
+    /*************************************************************************/
+    <?php
+    use Doctrine\ORM\Tools\Setup;
+    use Doctrine\ORM\EntityManager;
+    require_once 'vendor/autoload.php';
+    $isDevMode = true;
+    $config = Setup::createAnnotationMetadataConfiguration(array(__DIR__ . '/src'), $isDevMode);
+    $conn = array(
+        'driver'   => 'pdo_mysql',
+        'host'     => '127.0.0.1',
+        'dbname'   => 'basedatos',
+        'user'     => 'usuario',
+        'password' => 'clave'
+    );
+    $entityManager = EntityManager::create($conn, $config);
+    /*************************************************************************/
+
+    /* 2 cli-config.php */
+    /*************************************************************************/
+    <?php
+    require_once 'bootstrap.php';
+    return \Doctrine\ORM\Tools\Console\ConsoleRunner::createHelperSet($entityManager);
+    /*************************************************************************/
+
+    /* 3 src/Registro.php */
+    /*************************************************************************/
+    <?php
+    /**
+     * @Entity @Table(name="registro")
+     **/
+    class Registro {
+        /**
+         * @Id
+         * @Column(type="integer") @GeneratedValue
+         */
+        protected $id;
+        /**
+         * @Column(type="string", length=200, unique=true, nullable=false)
+         */
+        protected $token;
+        /**
+         * @Column(type="string", length=100, unique=false, nullable=true)
+         */
+        protected $email;
+        /**
+         * @Column(type="string", length=20, unique=false, nullable=true)
+         */
+        protected $phone;
+
+        //métodos getter y setter
+        public function getId() {
+            return $this->id;
+        }
+        public function setId($id) {
+            $this->id = $id;
+            return $this;
+        }
+        ...
+    }
+    /*************************************************************************/    
+    
+    PARA EJECUTAR LOS COMANDOS DE ORM TIENES QUE HACERLO DESDE CLASS
+    
+    /*************************************************************************/
+    Crear las tablas:
+    shell> .../doctrine/vendor/bin/doctrine orm:schema-tool:create
+
+    Borrar las tablas:
+    shell> .../clases/vendor/bin/doctrine orm:schema-tool:drop --force
+
+    Modificar las tablas:
+    shell> .../clases/vendor/bin/doctrine orm:schema-tool:update --force
+
+    3 Trabajar con los objetos
+
+        a Persistir los objetos
+        $registro = new Registro();
+        $registro->setToken('token');
+        $registro->setEmail('email');
+        $registro->setPhone('phone');
+        $entityManager->persist($registro);
+        $entityManager->flush();
+
+        b Listar
+        $repositorioRegistros = $entityManager->getRepository('Registro');
+        $registros = $repositorioRegistros->findAll();
+        foreach ($registros as $registro) {
+            echo $registro->getToken() . '<br>';
+        }
+
+        c Get por id
+        $id = 1;
+        $registro = $entityManager->find('Registro', $id);
+
+        d Get por condicion (uno, varios)
+        $registro = $entityManager->getRepository('Registro')
+                                  ->findOneBy(array('token' => 'valor'));
+        $registros = $entityManager->getRepository('Registro')
+                                   ->findBy(array('email' => 'email'));
+
+        e Edit or update
+        $id = 1;
+        $registro = $entityManager->find('Registro', $id);
+        $registro->setToken('new token');
+        $entityManager->flush();
+
+        f Delete or remove
+        $id = 1;
+        $registro = $entityManager->find('Registro', $id);
+        $entityManager->remove($registro);
+        $entityManager->flush();
+
+        g Select or query
+        $dql = 'select r FROM Registro r where r.email = :email or r.phone = :phone order by r.id desc';
+        $query = $entityManager->createQuery($dql)
+                                ->setParameter('email', 'new email')
+                                ->setParameter('phone', 'new phone');
+        $registros = $query->getResult();
+        foreach ($registros as $registro) {
+            echo $registro->getToken() . '<br>';
+        }
+
+
+/*
+
+REST 1.0
+
+json -> json_encode
+        json_decode
+
+2.0 Métodos HTTP (CRUD)
+    ->GET:      consultar(R)
+    ->POST:	    crear(C)
+    ->PUT:	    modificar(U)
+    ->DELETE:   eliminar(D) 
+3.0 Api (Direcciones amigables)
+    -> Normal:  https://www.izv.org/ver.php?alumno=2334
+            GET:    http://www.izv.org/alumno/2334 -> informacion del alumno 2334
+            POST:	http://www.izv.org/alumno + {json} -> Crear alumno
+            PUT:	http://www.izv.org/alumno/2334 + {json} -> Modificar alumno
+            DELETE: http://www.izv.org/alumno/2334 -> borrar http://www.izv.org/alumno + {json}
+    -> borrar where -> 1 sola página web que recibe todas las peticiones
+            apache+php -> .htaccess -> reglas de reescritura {
+                si pido una página que no existe te mando a una página concreta
+            }
+
+    1º Averiguar el método utilizado ( PUT, POST, DELETE, GET ) $_SERVER['REQUEST_METHOD']
+    2º Descomponer la URL: alumno/2334 -> array( alumno, 2334 )
+    3º Obtener los parámetros json: php://input
+    4º Operar: Cuando se tengan los datos se trabajan con ellos
+    5º Respuesta json
+
+    //BD Proyecto
+    Nombre BD: wp
+    Usuario: uwp
+    Clave: cwp
+    
+    
+    Doctrine -> Aplicación para melomanos
+    disco 
+        -> id 
+        -> titulo
+          
+    Cancion 
+        -> id
+        -> titulo
+    
+    Artista
+        -> id 
+        -> nombre
+    
+    Disco_cancion
+        -> id
+        -> id_disco   }
+        -> id_cancion } unique 
+        -> id_artista }
+        
+        
+        
+        
+    tabla PROFESOR      id_profesor autoincrement, nombre departamento,         
+    tabla ACTIVIDAD     id_actividad autoincrement, id_profesor que organiza, titulo, descripcion de la actividad, descripcion corta, id_grupo, fecha (DATE), lugar, hora inicio (TIME), hora fin (TIME), Foto reprensentiva  *(opcional)    (1...n)
+    tabla GRUPO         id_grupo 
+    
+    Lista las actividades de datos de una fecha concreta. -> mas cercanas primero
+    Lista las actividades de las actividades de profesor.
+ */

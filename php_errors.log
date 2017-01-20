@@ -1,0 +1,26 @@
+[19-Jan-2017 19:53:52 UTC] PHP Fatal error:  Cannot redeclare class Disk in /home/ubuntu/workspace/doctrine/src/Disk.php on line 7
+[19-Jan-2017 19:53:52 UTC] PHP Stack trace:
+[19-Jan-2017 19:53:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/bin/doctrine:0
+[19-Jan-2017 19:53:52 UTC] PHP   2. include() /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/bin/doctrine:4
+[19-Jan-2017 19:53:52 UTC] PHP   3. Doctrine\ORM\Tools\Console\ConsoleRunner::run() /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/bin/doctrine.php:59
+[19-Jan-2017 19:53:52 UTC] PHP   4. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/Console/ConsoleRunner.php:64
+[19-Jan-2017 19:53:52 UTC] PHP   5. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/doctrine/vendor/symfony/console/Application.php:122
+[19-Jan-2017 19:53:52 UTC] PHP   6. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/doctrine/vendor/symfony/console/Application.php:191
+[19-Jan-2017 19:53:52 UTC] PHP   7. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/doctrine/vendor/symfony/console/Application.php:846
+[19-Jan-2017 19:53:52 UTC] PHP   8. Doctrine\ORM\Tools\Console\Command\SchemaTool\AbstractCommand->execute() /home/ubuntu/workspace/doctrine/vendor/symfony/console/Command/Command.php:264
+[19-Jan-2017 19:53:52 UTC] PHP   9. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getAllMetadata() /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/Console/Command/SchemaTool/AbstractCommand.php:59
+[19-Jan-2017 19:53:52 UTC] PHP  10. Doctrine\Common\Persistence\Mapping\Driver\AnnotationDriver->getAllClassNames() /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:114
+[19-Jan-2017 19:53:52 UTC] PHP  11. require_once() /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/Driver/AnnotationDriver.php:236
+[19-Jan-2017 19:57:09 UTC] PHP Fatal error:  Cannot redeclare class Disk in /home/ubuntu/workspace/doctrine/src/Disk.php on line 7
+[19-Jan-2017 19:57:09 UTC] PHP Stack trace:
+[19-Jan-2017 19:57:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/bin/doctrine:0
+[19-Jan-2017 19:57:09 UTC] PHP   2. include() /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/bin/doctrine:4
+[19-Jan-2017 19:57:09 UTC] PHP   3. Doctrine\ORM\Tools\Console\ConsoleRunner::run() /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/bin/doctrine.php:59
+[19-Jan-2017 19:57:09 UTC] PHP   4. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/Console/ConsoleRunner.php:64
+[19-Jan-2017 19:57:09 UTC] PHP   5. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/doctrine/vendor/symfony/console/Application.php:122
+[19-Jan-2017 19:57:09 UTC] PHP   6. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/doctrine/vendor/symfony/console/Application.php:191
+[19-Jan-2017 19:57:09 UTC] PHP   7. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/doctrine/vendor/symfony/console/Application.php:846
+[19-Jan-2017 19:57:09 UTC] PHP   8. Doctrine\ORM\Tools\Console\Command\SchemaTool\AbstractCommand->execute() /home/ubuntu/workspace/doctrine/vendor/symfony/console/Command/Command.php:264
+[19-Jan-2017 19:57:09 UTC] PHP   9. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getAllMetadata() /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/Console/Command/SchemaTool/AbstractCommand.php:59
+[19-Jan-2017 19:57:09 UTC] PHP  10. Doctrine\Common\Persistence\Mapping\Driver\AnnotationDriver->getAllClassNames() /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:114
+[19-Jan-2017 19:57:09 UTC] PHP  11. require_once() /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/Driver/AnnotationDriver.php:236
