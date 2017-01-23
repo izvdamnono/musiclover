@@ -24,3 +24,92 @@
 [19-Jan-2017 19:57:09 UTC] PHP   9. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getAllMetadata() /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/Console/Command/SchemaTool/AbstractCommand.php:59
 [19-Jan-2017 19:57:09 UTC] PHP  10. Doctrine\Common\Persistence\Mapping\Driver\AnnotationDriver->getAllClassNames() /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:114
 [19-Jan-2017 19:57:09 UTC] PHP  11. require_once() /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/Driver/AnnotationDriver.php:236
+[21-Jan-2017 17:14:30 UTC] PHP Warning:  require_once(../AutoLoad.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/api.php on line 3
+[21-Jan-2017 17:14:30 UTC] PHP Stack trace:
+[21-Jan-2017 17:14:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:14:30 UTC] PHP Fatal error:  require_once(): Failed opening required '../AutoLoad.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/api/api.php on line 3
+[21-Jan-2017 17:14:30 UTC] PHP Stack trace:
+[21-Jan-2017 17:14:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:14:53 UTC] PHP Fatal error:  Class 'Bootstrap' not found in /home/ubuntu/workspace/api/api.php on line 5
+[21-Jan-2017 17:14:53 UTC] PHP Stack trace:
+[21-Jan-2017 17:14:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:15:15 UTC] PHP Warning:  require_once(../vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/doctrine/Bootstrap.php on line 20
+[21-Jan-2017 17:15:15 UTC] PHP Stack trace:
+[21-Jan-2017 17:15:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:15:15 UTC] PHP   2. Bootstrap->__construct() /home/ubuntu/workspace/api/api.php:6
+[21-Jan-2017 17:15:15 UTC] PHP Fatal error:  require_once(): Failed opening required '../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/doctrine/Bootstrap.php on line 20
+[21-Jan-2017 17:15:15 UTC] PHP Stack trace:
+[21-Jan-2017 17:15:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:15:15 UTC] PHP   2. Bootstrap->__construct() /home/ubuntu/workspace/api/api.php:6
+[21-Jan-2017 17:16:11 UTC] PHP Warning:  require_once(./Bootstrap.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/doctrine/AutoLoad.php on line 11
+[21-Jan-2017 17:16:11 UTC] PHP Stack trace:
+[21-Jan-2017 17:16:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:16:11 UTC] PHP   2. require_once() /home/ubuntu/workspace/api/api.php:3
+[21-Jan-2017 17:16:11 UTC] PHP Fatal error:  require_once(): Failed opening required './Bootstrap.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/doctrine/AutoLoad.php on line 11
+[21-Jan-2017 17:16:11 UTC] PHP Stack trace:
+[21-Jan-2017 17:16:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:16:11 UTC] PHP   2. require_once() /home/ubuntu/workspace/api/api.php:3
+[21-Jan-2017 17:16:36 UTC] PHP Warning:  require_once(./Bootstrap.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/doctrine/AutoLoad.php on line 11
+[21-Jan-2017 17:16:36 UTC] PHP Stack trace:
+[21-Jan-2017 17:16:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:16:36 UTC] PHP   2. require_once() /home/ubuntu/workspace/api/api.php:3
+[21-Jan-2017 17:16:36 UTC] PHP Fatal error:  require_once(): Failed opening required './Bootstrap.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/doctrine/AutoLoad.php on line 11
+[21-Jan-2017 17:16:36 UTC] PHP Stack trace:
+[21-Jan-2017 17:16:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:16:36 UTC] PHP   2. require_once() /home/ubuntu/workspace/api/api.php:3
+[21-Jan-2017 17:16:51 UTC] PHP Warning:  require_once(../vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/doctrine/Bootstrap.php on line 20
+[21-Jan-2017 17:16:51 UTC] PHP Stack trace:
+[21-Jan-2017 17:16:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:16:51 UTC] PHP   2. Bootstrap->__construct() /home/ubuntu/workspace/api/api.php:5
+[21-Jan-2017 17:16:51 UTC] PHP Fatal error:  require_once(): Failed opening required '../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/doctrine/Bootstrap.php on line 20
+[21-Jan-2017 17:16:51 UTC] PHP Stack trace:
+[21-Jan-2017 17:16:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:16:51 UTC] PHP   2. Bootstrap->__construct() /home/ubuntu/workspace/api/api.php:5
+[21-Jan-2017 17:18:26 UTC] PHP Warning:  require_once(../vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/doctrine/Bootstrap.php on line 20
+[21-Jan-2017 17:18:26 UTC] PHP Stack trace:
+[21-Jan-2017 17:18:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:18:26 UTC] PHP   2. Bootstrap->__construct() /home/ubuntu/workspace/api/api.php:5
+[21-Jan-2017 17:18:26 UTC] PHP Fatal error:  require_once(): Failed opening required '../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/doctrine/Bootstrap.php on line 20
+[21-Jan-2017 17:18:26 UTC] PHP Stack trace:
+[21-Jan-2017 17:18:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:18:26 UTC] PHP   2. Bootstrap->__construct() /home/ubuntu/workspace/api/api.php:5
+[21-Jan-2017 17:18:58 UTC] PHP Warning:  require_once(./vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/doctrine/Bootstrap.php on line 20
+[21-Jan-2017 17:18:58 UTC] PHP Stack trace:
+[21-Jan-2017 17:18:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:18:58 UTC] PHP   2. Bootstrap->__construct() /home/ubuntu/workspace/api/api.php:5
+[21-Jan-2017 17:18:58 UTC] PHP Fatal error:  require_once(): Failed opening required './vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/doctrine/Bootstrap.php on line 20
+[21-Jan-2017 17:18:58 UTC] PHP Stack trace:
+[21-Jan-2017 17:18:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:18:58 UTC] PHP   2. Bootstrap->__construct() /home/ubuntu/workspace/api/api.php:5
+[21-Jan-2017 17:19:11 UTC] PHP Warning:  require_once(/vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/doctrine/Bootstrap.php on line 20
+[21-Jan-2017 17:19:11 UTC] PHP Stack trace:
+[21-Jan-2017 17:19:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:19:11 UTC] PHP   2. Bootstrap->__construct() /home/ubuntu/workspace/api/api.php:5
+[21-Jan-2017 17:19:11 UTC] PHP Fatal error:  require_once(): Failed opening required '/vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/doctrine/Bootstrap.php on line 20
+[21-Jan-2017 17:19:11 UTC] PHP Stack trace:
+[21-Jan-2017 17:19:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:19:11 UTC] PHP   2. Bootstrap->__construct() /home/ubuntu/workspace/api/api.php:5
+[21-Jan-2017 17:19:42 UTC] PHP Fatal error:  Class 'Bootstrap' not found in /home/ubuntu/workspace/api/api.php on line 5
+[21-Jan-2017 17:19:42 UTC] PHP Stack trace:
+[21-Jan-2017 17:19:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:20:11 UTC] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Mapping\MappingException' with message 'The target-entity diskSong cannot be found in 'Song#iddca'.' in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:740
+Stack trace:
+#0 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(953): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('diskSong', 'Song', 'iddca')
+#1 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(198): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(177): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(332): Doctrine\ORM\Mapping\ClassMetada in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 740
+[21-Jan-2017 17:20:58 UTC] PHP Fatal error:  Class 'Bootstrap' not found in /home/ubuntu/workspace/api/api.php on line 5
+[21-Jan-2017 17:20:58 UTC] PHP Stack trace:
+[21-Jan-2017 17:20:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/api.php:0
+[21-Jan-2017 17:21:04 UTC] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Mapping\MappingException' with message 'The target-entity diskSong cannot be found in 'Song#iddca'.' in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:740
+Stack trace:
+#0 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(953): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('diskSong', 'Song', 'iddca')
+#1 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(198): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(177): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(332): Doctrine\ORM\Mapping\ClassMetada in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 740
+[21-Jan-2017 17:57:58 UTC] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Mapping\MappingException' with message 'The target-entity diskSong cannot be found in 'Song#iddca'.' in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:740
+Stack trace:
+#0 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(953): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('diskSong', 'Song', 'iddca')
+#1 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(198): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(177): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(332): Doctrine\ORM\Mapping\ClassMetada in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 740

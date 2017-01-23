@@ -2,12 +2,10 @@
 
 class AutoLoad {
     static function load($clase) {
-        $archivo = './doctrine/' . $clase . '.php';
+        $archivo = '' . $clase . '.php';
         if(file_exists($archivo)){
             require_once $archivo;
-        }
-        else 
-        {
+        } else {
             $archivo = '../doctrine/' . $clase . '.php';    
             if ( file_exists($archivo) ) {
                 require_once $archivo;

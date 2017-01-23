@@ -1,4 +1,5 @@
 <?php
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * @Entity @Table(name="disk")
@@ -14,6 +15,15 @@ class Disk {
      * @Column(type="string", length=200, unique=true, nullable=false)
      */
     protected $title;
+    
+    /**
+     * @OneToMany(targetEntity="diskSong", mappedBy="disk")
+     */
+    protected $iddca = null;
+
+    public function __construct() {
+        $this->iddca = new ArrayCollection();
+    }
 
     /**
      * @return mixed
@@ -41,6 +51,17 @@ class Disk {
      */
     public function setTitle($title) {
         $this->title = $title;
+    }
+    
+    public function addIddca($iddca){
+        $this->iddca[] = $iddca;
+    }
+    
+    public function getArray() {
+        return array(
+            "id" => $this->id, 
+            "title" => $this->title, 
+        );
     }
 
 

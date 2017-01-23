@@ -1,0 +1,126 @@
+[20-Jan-2017 08:09:36 UTC] PHP Warning:  require_once(../doctrine/AutoLoad.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/doctrine/api/artist_api.php on line 3
+[20-Jan-2017 08:09:36 UTC] PHP Stack trace:
+[20-Jan-2017 08:09:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/doctrine/api/artist_api.php:0
+[20-Jan-2017 08:09:36 UTC] PHP Fatal error:  require_once(): Failed opening required '../doctrine/AutoLoad.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/doctrine/api/artist_api.php on line 3
+[20-Jan-2017 08:09:36 UTC] PHP Stack trace:
+[20-Jan-2017 08:09:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/doctrine/api/artist_api.php:0
+[20-Jan-2017 08:17:14 UTC] PHP Fatal error:  Class 'Bootstrap' not found in /home/ubuntu/workspace/doctrine/api/artist_api.php on line 4
+[20-Jan-2017 08:17:14 UTC] PHP Stack trace:
+[20-Jan-2017 08:17:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/doctrine/api/artist_api.php:0
+[20-Jan-2017 08:17:27 UTC] PHP Fatal error:  Class 'Bootstrap' not found in /home/ubuntu/workspace/doctrine/api/artist_api.php on line 4
+[20-Jan-2017 08:17:27 UTC] PHP Stack trace:
+[20-Jan-2017 08:17:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/doctrine/api/artist_api.php:0
+[20-Jan-2017 08:18:56 UTC] PHP Fatal error:  Class 'Bootstrap' not found in /home/ubuntu/workspace/doctrine/api/artist_api.php on line 4
+[20-Jan-2017 08:18:56 UTC] PHP Stack trace:
+[20-Jan-2017 08:18:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/doctrine/api/artist_api.php:0
+[20-Jan-2017 08:23:31 UTC] PHP Fatal error:  Class 'Bootstrap' not found in /home/ubuntu/workspace/doctrine/api/artist_api.php on line 4
+[20-Jan-2017 08:23:31 UTC] PHP Stack trace:
+[20-Jan-2017 08:23:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/doctrine/api/artist_api.php:0
+[20-Jan-2017 08:28:52 UTC] PHP Fatal error:  Call to undefined method Artist::getArray() in /home/ubuntu/workspace/doctrine/api/artist_api.php on line 14
+[20-Jan-2017 08:28:52 UTC] PHP Stack trace:
+[20-Jan-2017 08:28:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/doctrine/api/artist_api.php:0
+[20-Jan-2017 08:43:51 UTC] PHP Fatal error:  Call to undefined method Song::getArray() in /home/ubuntu/workspace/doctrine/api/api.php on line 31
+[20-Jan-2017 08:43:51 UTC] PHP Stack trace:
+[20-Jan-2017 08:43:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/doctrine/api/api.php:0
+[20-Jan-2017 08:55:37 UTC] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Mapping\MappingException' with message 'The target-entity artist cannot be found in 'DiskSong#idArtist'.' in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:740
+Stack trace:
+#0 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(953): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('artist', 'DiskSong', 'idArtist')
+#1 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(198): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(177): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(332): Doctrine\ORM\Mapping\C in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 740
+[20-Jan-2017 09:03:35 UTC] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Mapping\MappingException' with message 'The target-entity artist cannot be found in 'DiskSong#idArtist'.' in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:740
+Stack trace:
+#0 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(953): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('artist', 'DiskSong', 'idArtist')
+#1 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(198): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(177): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(332): Doctrine\ORM\Mapping\C in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 740
+[20-Jan-2017 09:25:02 UTC] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Mapping\MappingException' with message 'The target-entity artist cannot be found in 'DiskSong#idArtist'.' in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:740
+Stack trace:
+#0 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(953): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('artist', 'DiskSong', 'idArtist')
+#1 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(198): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(177): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(332): Doctrine\ORM\Mapping\C in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 740
+[20-Jan-2017 09:25:03 UTC] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Mapping\MappingException' with message 'The target-entity artist cannot be found in 'DiskSong#idArtist'.' in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:740
+Stack trace:
+#0 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(953): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('artist', 'DiskSong', 'idArtist')
+#1 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(198): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(177): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(332): Doctrine\ORM\Mapping\C in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 740
+[20-Jan-2017 09:25:04 UTC] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Mapping\MappingException' with message 'The target-entity artist cannot be found in 'DiskSong#idArtist'.' in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:740
+Stack trace:
+#0 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(953): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('artist', 'DiskSong', 'idArtist')
+#1 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(198): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(177): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(332): Doctrine\ORM\Mapping\C in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 740
+[20-Jan-2017 09:25:07 UTC] PHP Fatal error:  Class 'ArrayCollection' not found in /home/ubuntu/workspace/doctrine/src/Song.php on line 22
+[20-Jan-2017 09:25:07 UTC] PHP Stack trace:
+[20-Jan-2017 09:25:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/doctrine/api/api.php:0
+[20-Jan-2017 09:25:07 UTC] PHP   2. Song->__construct() /home/ubuntu/workspace/doctrine/api/api.php:40
+[20-Jan-2017 09:26:22 UTC] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Mapping\MappingException' with message 'The target-entity diskSong cannot be found in 'Song#iddca'.' in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:740
+Stack trace:
+#0 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(953): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('diskSong', 'Song', 'iddca')
+#1 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(198): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(177): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(332): Doctrine\ORM\Mapping\ClassMetada in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 740
+[20-Jan-2017 09:26:30 UTC] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Mapping\MappingException' with message 'The target-entity artist cannot be found in 'DiskSong#idArtist'.' in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:740
+Stack trace:
+#0 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(953): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('artist', 'DiskSong', 'idArtist')
+#1 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(198): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(177): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(332): Doctrine\ORM\Mapping\C in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 740
+[20-Jan-2017 09:27:38 UTC] PHP Fatal error:  Class 'ArrayCollection' not found in /home/ubuntu/workspace/doctrine/src/Song.php on line 24
+[20-Jan-2017 09:27:38 UTC] PHP Stack trace:
+[20-Jan-2017 09:27:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/doctrine/api/api.php:0
+[20-Jan-2017 09:27:38 UTC] PHP   2. Song->__construct() /home/ubuntu/workspace/doctrine/api/api.php:40
+[20-Jan-2017 09:27:38 UTC] PHP Fatal error:  Class 'ArrayCollection' not found in /home/ubuntu/workspace/doctrine/src/Song.php on line 24
+[20-Jan-2017 09:27:38 UTC] PHP Stack trace:
+[20-Jan-2017 09:27:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/doctrine/api/api.php:0
+[20-Jan-2017 09:27:38 UTC] PHP   2. Song->__construct() /home/ubuntu/workspace/doctrine/api/api.php:40
+[20-Jan-2017 09:27:45 UTC] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Mapping\MappingException' with message 'The target-entity diskSong cannot be found in 'Song#iddca'.' in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:740
+Stack trace:
+#0 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(953): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('diskSong', 'Song', 'iddca')
+#1 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(198): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(177): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(332): Doctrine\ORM\Mapping\ClassMetada in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 740
+[20-Jan-2017 09:27:50 UTC] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Mapping\MappingException' with message 'The target-entity diskSong cannot be found in 'Artist#iddca'.' in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:740
+Stack trace:
+#0 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(953): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('diskSong', 'Artist', 'iddca')
+#1 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(198): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(177): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(332): Doctrine\ORM\Mapping\ClassMe in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 740
+[20-Jan-2017 09:27:56 UTC] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Mapping\MappingException' with message 'The target-entity diskSong cannot be found in 'Disk#iddca'.' in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:740
+Stack trace:
+#0 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(953): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('diskSong', 'Disk', 'iddca')
+#1 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(198): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(177): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(332): Doctrine\ORM\Mapping\ClassMetada in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 740
+[20-Jan-2017 09:55:00 UTC] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Mapping\MappingException' with message 'The target-entity diskSong cannot be found in 'Song#iddca'.' in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:740
+Stack trace:
+#0 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(953): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('diskSong', 'Song', 'iddca')
+#1 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(198): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(177): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(332): Doctrine\ORM\Mapping\ClassMetada in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 740
+[20-Jan-2017 09:57:36 UTC] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Mapping\MappingException' with message 'The target-entity artist cannot be found in 'DiskSong#idArtist'.' in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:740
+Stack trace:
+#0 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(953): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('artist', 'DiskSong', 'idArtist')
+#1 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(198): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(177): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(332): Doctrine\ORM\Mapping\C in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 740
+[20-Jan-2017 09:57:37 UTC] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Mapping\MappingException' with message 'The target-entity artist cannot be found in 'DiskSong#idArtist'.' in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:740
+Stack trace:
+#0 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(953): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('artist', 'DiskSong', 'idArtist')
+#1 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(198): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(177): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(332): Doctrine\ORM\Mapping\C in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 740
+[20-Jan-2017 09:57:38 UTC] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Mapping\MappingException' with message 'The target-entity artist cannot be found in 'DiskSong#idArtist'.' in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:740
+Stack trace:
+#0 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(953): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('artist', 'DiskSong', 'idArtist')
+#1 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(198): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(177): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(332): Doctrine\ORM\Mapping\C in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 740
+[21-Jan-2017 17:06:42 UTC] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Mapping\MappingException' with message 'The target-entity diskSong cannot be found in 'Song#iddca'.' in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:740
+Stack trace:
+#0 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(953): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('diskSong', 'Song', 'iddca')
+#1 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(198): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(177): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /home/ubuntu/workspace/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(332): Doctrine\ORM\Mapping\ClassMetada in /home/ubuntu/workspace/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 740

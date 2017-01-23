@@ -1,8 +1,9 @@
 <?php
 
 /**
- * @Entity
- * @Table(name="diskSong",uniqueConstraints={@UniqueConstraint(name="ids", columns={"artist_id", "song_id", "disk_id"})})
+ * @Entity 
+ * @Table(name="diskSong",
+ * uniqueConstraints={@UniqueConstraint(name="dca_unique",columns={"iddisk","idsong","idartist"})})
  */
 class DiskSong {
     /**
@@ -12,20 +13,20 @@ class DiskSong {
     protected $id;
 
     /**
-     * @OneToOne(targetEntity="artist")
-     * @JoinColumn(name="artist_id", referencedColumnName="id", onDelete="CASCADE")
+     * @ManyToOne(targetEntity="artist", inversedBy="iddca")
+     * @JoinColumn(name="idartist", referencedColumnName="id")
      */
     protected $idArtist;
 
     /**
-     * @OneToOne(targetEntity="song")
-     * @JoinColumn(name="song_id", referencedColumnName="id", onDelete="CASCADE")
+     * @ManyToOne(targetEntity="song", inversedBy="iddca")
+     * @JoinColumn(name="idsong", referencedColumnName="id")
      */
     protected $idSong;
 
     /**
-     * @OneToOne(targetEntity="disk")
-     * @JoinColumn(name="disk_id", referencedColumnName="id", onDelete="CASCADE")
+     * @ManyToOne(targetEntity="disk", inversedBy="iddca")
+     * @JoinColumn(name="iddisk", referencedColumnName="id")
      */
     protected $idDisk;
 
@@ -85,6 +86,14 @@ class DiskSong {
         $this->idDisk = $idDisk;
     }
 
+    public function getArray() {
+        return array(
+            "id" => $this->id, 
+            "idArtist" => $this->idArtist, 
+            "idSong" => $this->idSong, 
+            "idDisk" => $this->idDisk, 
+        );
+    }
     
 
 }

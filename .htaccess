@@ -1,0 +1,10 @@
+# Activar RewriteEngine
+RewriteEngine on
+
+# Reescribir la URL solicitada por el usuario
+#   Entrada:    api/cancion/NOMBRE/
+#   Salida:     api/cancion.php?id=NOMBRE
+RewriteRule ^api/artist/(\w+)/?$ api/api.php?id=$1&api=artist
+RewriteRule ^api/disk/(\w+)/?$ api/api.php?id=$1&api=disk
+RewriteRule ^api/song/(\w+)/?$ api/api.php?id=$1&api=song
+RewriteRule ^api/disksong/(\w+)/?$ api/api.php?id=$1&api=diskSong
