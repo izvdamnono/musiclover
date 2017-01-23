@@ -1,5 +1,5 @@
 REST 1.0
-
+<pre>
 json -> json_encode
         json_decode
 
@@ -59,3 +59,4 @@ json -> json_encode
     
     Lista las actividades de datos de una fecha concreta. -> mas cercanas primero
     Lista las actividades de las actividades de profesor.
+</pre>
